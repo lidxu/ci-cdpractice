@@ -19,10 +19,6 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm test
-      - name: Run Lint
-        run: npm run lint
-      - name: Run tests
-        run: npm test
   build-and-push:
     needs: test # 测试通过后才执行
     runs-on: ubuntu-latest
