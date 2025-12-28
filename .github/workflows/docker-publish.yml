@@ -40,4 +40,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/ci-cd-practice:latest
-            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{ github.sha }} # 使用Commit SHA作为唯一标签
+            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{ github.sha }} 
