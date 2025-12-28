@@ -38,4 +38,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/ci-cd-practice:latest # 镜像标签（全小写）
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:latest
+            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{ github.sha }} # 使用Commit SHA作为唯一标签
